@@ -185,7 +185,7 @@ export const HomeBody = ({ className }: Props) => {
                 <HomeImage
                   width={1200}
                   height={1200}
-                  src="/about/about-3.jpg"
+                  src="/about/about-2.jpg"
                   alt="food-image"
                   className="w-full h-auto object-contain overflow-hidden"
                 />
