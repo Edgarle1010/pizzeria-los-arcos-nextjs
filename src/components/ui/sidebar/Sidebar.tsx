@@ -97,7 +97,7 @@ export const Sidebar = () => {
             onClick={() => closeMenu()}
           >
             <FaWhatsapp size={30} />
-            <span className="ml-3 text-xl">Llámanos</span>
+            <span className="ml-3 text-xl">Haz tu pedido</span>
           </Link>
 
           <Link

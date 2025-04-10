@@ -29,10 +29,13 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center">
-        <h1 className="text-1xl antialiased font-bold my-2">
+      <div className="text-center pb-4">
+        <Link
+          className="text-1xl antialiased font-bold rounded-md transition-all hover:bg-gray-100"
+          href="/about"
+        >
           ACERCA DE NOSOTROS
-        </h1>
+        </Link>
       </div>
 
       <div className="flex w-full justify-center mb-6 space-x-6">
@@ -43,13 +46,13 @@ export const Footer = () => {
           <FaFacebook />
         </Link>
         <Link
-          href="https://www.instagram.com/losarcospizzeria/"
+          href="https://www.instagram.com/losarcosperiferico?igsh=YTJkdDY4cmgxc2Zu"
           className="text-2xl"
         >
           <FaInstagram />
         </Link>
         <Link
-          href="https://api.whatsapp.com/send/?phone=%2B5216251121988&text"
+          href="https://api.whatsapp.com/send/?phone=%2B5216251010905&text"
           className="text-2xl"
         >
           <FaWhatsapp />
