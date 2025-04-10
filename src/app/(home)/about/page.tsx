@@ -2,7 +2,12 @@ import { Title } from "@/components";
 import { HomeBody, HomeMobileSlideshow } from "@/components";
 
 export default function AboutPage() {
-  const images = ["/home/home-1.jpg", "/home/home-2.jpg", "/home/home-3.jpg"];
+  const images = [
+    "/about/about-1.jpg",
+    "/about/about-2.jpg",
+    "/about/about-3.jpg",
+    "/about/about-4.jpg"
+  ];
 
   return (
     <div className="flex justify-center items-center">
