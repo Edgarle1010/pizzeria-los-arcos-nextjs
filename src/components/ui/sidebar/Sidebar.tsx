@@ -5,9 +5,20 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import clsx from "clsx";
-import { IoCloseOutline } from "react-icons/io5";
-import { FaCat, FaDog } from "react-icons/fa";
-import { GiTurtle } from "react-icons/gi";
+import {
+  IoCloseOutline,
+  IoLogInOutline,
+  IoLogOutOutline,
+  IoPeopleOutline,
+  IoPersonOutline,
+  IoSearchOutline,
+  IoShirtOutline,
+  IoTicketOutline,
+} from "react-icons/io5";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { BiFoodMenu } from "react-icons/bi";
+import { SlLocationPin } from "react-icons/sl";
+import { MdOutlineDiscount } from "react-icons/md";
 
 import { useUIStore } from "@/store";
 
@@ -58,6 +69,46 @@ export const Sidebar = () => {
           className="absolute top-5 right-5 cursor-pointer"
           onClick={() => closeMenu()}
         />
+
+        <>
+          <Link
+            href="/pdf/menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center mt-20 p-2 hover:bg-gray-100 rounded transition-all"
+            onClick={() => closeMenu()}
+          >
+            <BiFoodMenu size={30} />
+            <span className="ml-3 text-xl">Menú</span>
+          </Link>
+
+          <Link
+            href="https://maps.app.goo.gl/MHoHuQ2ZkyCDs5ic6"
+            className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+            onClick={() => closeMenu()}
+          >
+            <SlLocationPin size={30} />
+            <span className="ml-3 text-xl">Ubicación</span>
+          </Link>
+
+          <Link
+            href="tel:6255834400 "
+            className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+            onClick={() => closeMenu()}
+          >
+            <FaWhatsapp size={30} />
+            <span className="ml-3 text-xl">Llámanos</span>
+          </Link>
+
+          <Link
+            href="https://www.facebook.com/Losarcospizzeria"
+            className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+            onClick={() => closeMenu()}
+          >
+            <FaFacebook size={30} />
+            <span className="ml-3 text-xl">Siguenos</span>
+          </Link>
+        </>
       </nav>
     </div>
   );
